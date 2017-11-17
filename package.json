@@ -1,0 +1,21 @@
+{
+  "name": "allie-blog",
+  "version": "0.0.1",
+  "description": "Wordpress theme for Allie's Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Wordpress",
+    "Blog"
+  ],
+  "author": "Dana Malkin",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "ginger-grid": "^2.1.1",
+    "nifty-nav": "^3.0.0",
+    "prelude-wp": "^4.0.1"
+  }
+}
