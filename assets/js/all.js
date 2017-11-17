@@ -744,4 +744,8 @@ jQuery( document ).ready(function( $ ) {
     $('body').addClass('safari');
   }
 
+  // Nifty Nav
+  $('#nifty-nav-toggle').niftyNav();
+
+
 });

@@ -2,7 +2,64 @@
   Typography
 ------------------------------------------------------------------------------*/
 
+// Headers
+h1 {
+  margin: 0 0 rem(30);
+  font: $semibold rem(55)/rem(60) $mont;
+  color: $white;
+}
+
+h2 {
+  margin: 0 0 rem(20);
+  font: $light rem(45)/rem(56) $mont;
+  color: $primary;
+}
+
+h3 {
+  margin: 0 0 rem(15);
+  font: $regular rem(30)/rem(35) $mont;
+  color: $primary;
+}
+
+h4 {
+  margin: 0 0 rem(15);
+  font: $regular rem(25)/rem(30) $mont;
+  color: $primary;
+}
+
+h5 {
+  margin: 0 0 rem(15);
+  font: $regular rem(20)/rem(25) $mont;
+  color: $secondary;
+}
+
+h6 {
+  margin: 0 0 rem(10);
+  font: $light rem(20)/rem(25) $mont;
+  color: $tertiary;
+}
+
+// Body Copy
+p, ul, ol, li {
+  margin: 0 0 rem(15);
+  font: $light rem(18)/rem(25) $lora;
+  color: $tertiary;
+}
+
 // Links
 a {
+  font-family: $mont;
+  color: $primary;
   text-decoration: none;
+  transition: all .25s ease;
+
+  &:hover {
+    color: $primary;
+  }
+
+  i {
+    position: relative;
+    top: rem(3);
+    font-size: rem(24) !important;
+  }
 }

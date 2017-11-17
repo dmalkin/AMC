@@ -1,3 +1,27 @@
 /*------------------------------------------------------------------------------
   Header
 ------------------------------------------------------------------------------*/
+
+.header {
+  background-color: $primary;
+
+  .menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-content: center;
+      height: rem(50);
+      margin: 0;
+      padding-right: rem(40);
+
+      a {
+        margin: auto;
+        color: $white;
+      }
+    }
+  }
+}

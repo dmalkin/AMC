@@ -30,9 +30,8 @@
 <body <?php body_class(); ?>>
 
   <?php // Header ?>
-  <header>
 
-  </header>
+    <?php get_template_part('parts/global/header'); ?>
 
   <?php // Main Content ?>
   <main>
