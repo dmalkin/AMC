@@ -30,17 +30,19 @@
 @import 'globals/global';
 @import 'globals/wordpress';
 @import 'globals/typography';
+@import 'globals/fonts';
 
 // Components
 @import 'components/social-menu';
 @import 'components/header';
 @import 'components/footer';
+@import 'components/buttons';
 
 // Packages
 @import 'scss/font-awesome';
 
 // Templates
-@import 'templates/home';
+@import 'templates/home/home-hero';
 
 // Plugin Overrides
 @import 'plugins/overrides';

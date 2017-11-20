@@ -747,5 +747,24 @@ jQuery( document ).ready(function( $ ) {
   // Nifty Nav
   $('#nifty-nav-toggle').niftyNav();
 
+  // Slick Slider
+  // Testimonial Slider
+  if( $('.home-hero').length > 0 ) {
+    $('.hero-slider').slick({
+      autoplay: false,
+      autoplaySpeed: 5000,
+      slidesToShow: 1,
+      adaptiveHeight: false,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+          },
+        },
+      ],
+    });
+  }
 
 });
