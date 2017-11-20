@@ -1,0 +1,41 @@
+/*----------------------------------------------------------------------------
+  Buttons
+----------------------------------------------------------------------------*/
+.button, button {
+  display: inline-flex !important;
+  margin: rem(5) 0;
+  position: relative;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: rem(15) rem(50);
+  font: 400 rem(16)/rem(26) $mont;
+  text-decoration: none;
+  color: $white;
+  transition: all .3s ease;
+  &--primary {
+    border: 1px solid $white;
+    &:hover {
+      background-color: $white;
+      color: $primary;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  &--secondary {
+    background-color: $primary;
+    border: 1px solid $primary;
+    &:hover {
+      cursor: pointer;
+      background-color: $secondary;
+      text-decoration: none;
+    }
+  }
+
+  & + .button {
+    margin-left: rem(10);
+  }
+  & + button {
+    margin-left: rem(10);
+  }
+}
