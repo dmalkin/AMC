@@ -19,6 +19,9 @@
 @import 'settings/ginger-settings';
 @import 'ginger';
 
+@import 'settings/slick-theme';
+@import 'slick.scss';
+
 // vendor
 @import 'normalize';
 @include normalize();

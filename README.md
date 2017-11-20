@@ -1,4 +1,4 @@
-# Allie Malkin Blog
+# Allie Malkin Creative
 A custom WordPress theme designed and developed by Factor1.
 
 ### Credits

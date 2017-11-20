@@ -22,9 +22,9 @@ jQuery( document ).ready(function( $ ) {
   // Slick Slider
   // Testimonial Slider
   if( $('.home-hero').length > 0 ) {
-    $('.hero-slider').slick({
-      autoplay: false,
-      autoplaySpeed: 5000,
+    $('.home-slider').slick({
+      autoplay: true,
+      autoplaySpeed: 6000,
       slidesToShow: 1,
       adaptiveHeight: false,
       dots: false,
