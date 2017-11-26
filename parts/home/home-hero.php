@@ -34,7 +34,7 @@
                       <hr />
                     </div>
                   </div>
-                  <a class="button button--primary" href="#" >Read More</a>
+                  <a class="button button--primary" href="<?php echo get_permalink(); ?>" >Read More</a>
                 </div>
               </div>
             </div>
