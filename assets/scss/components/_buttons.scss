@@ -17,7 +17,7 @@
     border: 1px solid $white;
     &:hover {
       background-color: $white;
-      color: $primary;
+      color: $secondary;
       cursor: pointer;
       text-decoration: none;
     }
@@ -27,8 +27,18 @@
     border: 1px solid $primary;
     &:hover {
       cursor: pointer;
-      background-color: $secondary;
+      background-color: $white;
+      color: $primary;
       text-decoration: none;
+    }
+  }
+  &--dark {
+    text-transform: uppercase;
+    background-color: $dark;
+    border: 1px solid $dark;
+    &:hover {
+      background-color: $secondary;
+      color: $white;
     }
   }
 

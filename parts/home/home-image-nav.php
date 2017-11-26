@@ -11,7 +11,6 @@
 
  // Variables
  $leftImage = get_field('left_image');
- var_dump($leftImage);
  $centerImage = get_field('center_image');
  $rightImage = get_field('right_image');
  $leftTitle = get_field('left_title');
@@ -22,20 +21,20 @@
 
 <section class="container image-nav">
   <div class="sm-block-grid-1 block-grid-3">
-    <div class="col" style="background: url(<?php echo $leftImage['url']; ?>)">
-      <h1>
+    <div class="col" style="background: url(<?php echo $leftImage['url']; ?>) center center/cover no-repeat;">
+      <h3 class="text-center image-nav__title">
         <?php echo $leftTitle; ?>
-      </h1>
+      </h3>
     </div>
-    <div class="col" style="background: url(<?php echo $centerImage['url']; ?>)">
-      <h1>
+    <div class="col" style="background: url(<?php echo $centerImage['url']; ?>) center center/cover no-repeat;">
+      <h3 class="text-center home-nav__title">
         <?php echo $centerTitle; ?>
-      </h1>
+      </h3>
     </div>
-    <div class="col" style="background: url(<?php echo $rightImage['url']; ?>)">
-      <h1>
+    <div class="col" style="background: url(<?php echo $rightImage['url']; ?>) center center/cover no-repeat;">
+      <h3 class="text-center home-nav__title">
         <?php echo $rightTitle; ?>
-      </h1>
+      </h3>
     </div>
   </div>
 </section>

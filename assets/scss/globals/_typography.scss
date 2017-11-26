@@ -17,14 +17,15 @@ h2 {
 
 h3 {
   margin: 0 0 rem(15);
+  text-transform: uppercase;
   font: $regular rem(30)/rem(35) $mont;
-  color: $primary;
+  color: $secondary;
 }
 
 h4 {
   margin: 0 0 rem(15);
-  font: $regular rem(25)/rem(30) $mont;
-  color: $primary;
+  font: $regular rem(25)/rem(30) $lora;
+  color: $secondary;
 }
 
 h5 {
@@ -43,7 +44,7 @@ h6 {
 p, ul, ol, li {
   margin: 0 0 rem(15);
   font: $light rem(18)/rem(25) $lora;
-  color: $tertiary;
+  color: $dark;
 }
 
 // Links
