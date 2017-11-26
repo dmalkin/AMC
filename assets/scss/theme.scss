@@ -45,8 +45,9 @@
 @import 'scss/font-awesome';
 
 // Templates
-@import 'templates/home/home-hero';
 @import 'templates/global/contributor';
+@import 'templates/global/image-nav';
+@import 'templates/home/all';
 
 // Plugin Overrides
 @import 'plugins/overrides';

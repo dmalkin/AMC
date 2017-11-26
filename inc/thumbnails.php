@@ -15,4 +15,5 @@ function featuredURL($size = 'full'){
 
 if( function_exists('prelude_features') ){
   // Use add_image_size below to add additional thumbnail sizes
+  add_image_size('image-nav', '500', '500', 'true');
 }
