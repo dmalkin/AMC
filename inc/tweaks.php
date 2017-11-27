@@ -143,3 +143,6 @@
       }
    }
    add_action( 'admin_head', 'hide_editor' );
+
+   // Remove Contact Form editor
+   add_filter( 'wpcf7_validate_configuration', '__return_false' );

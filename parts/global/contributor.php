@@ -31,8 +31,8 @@
 ?>
 
  <section class="container about">
-   <div class="row">
-     <div class="col-5">
+   <div class="row row--full-width">
+     <div class="col-5 col-no-pad">
        <img src="<?php featuredURL('full'); ?>" title="<?php echo $img['title']; ?>">
        <a href="<?php echo $link; ?>" class="button button--dark" >Oh, you want more?</a>
      </div>

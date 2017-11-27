@@ -40,6 +40,7 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/buttons';
+@import 'components/forms';
 
 // Packages
 @import 'scss/font-awesome';
@@ -47,7 +48,9 @@
 // Templates
 @import 'templates/global/contributor';
 @import 'templates/global/image-nav';
-@import 'templates/home/all';
+@import 'templates/home/home-hero';
+@import 'templates/home/home-store';
+@import 'templates/home/home-resources';
 
 // Plugin Overrides
 @import 'plugins/overrides';

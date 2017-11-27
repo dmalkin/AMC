@@ -8,14 +8,30 @@
     justify-content: center;
     min-height: rem(200);
     margin-bottom: rem(50);
+
+    &:hover {
+      .image-nav__title{
+        color: $dark;
+        background-color: rgba(250,250,250,0.9);
+      }
+    }
   }
 
   &__title {
     align-self: center;
     padding: rem(10) rem(20);
-    background-color: $white;
+    font-family: $mont;
+    color: $dark;
+    background-color: rgba(250,250,250,0.7);
+    border: rem(1) solid $white;
     font-size: rem(18);
     line-height: rem(18);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $dark;
+      background-color: rgba(250,250,250,0.9);
+    }
   }
 }

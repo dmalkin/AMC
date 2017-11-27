@@ -18,9 +18,9 @@
 <?php if( $terms ) : ?>
   <section class="container home-store">
     <div class="row row--justify-content-center">
-      <h1>
+      <div class="text-center">
         <?php echo $headline; ?>
-      </h1>
+      </div>
       <div class="sm-block-grid-1 block-grid-3">
         <?php foreach( $terms as $term ) :
 
@@ -34,14 +34,17 @@
           <div class="col">
             <a href="<?php echo $term_link; ?>">
               <div class="text-center image-nav__block" style="background: url(<?php echo $image; ?>) center center/cover no-repeat;">
-                <h3 class="image-nav__title">
+                <h2 href="<?php echo $term_link; ?>" class="image-nav__title button">
                   <?php echo $term->name; ?>
-                </h3>
+                </h2>
               </div>
             </a>
           </div>
         <?php endforeach;?>
       </div>
+    </div>
+    <div class="row row--justify-content-center">
+      <div class="square"></div>
     </div>
   </section>
 <?php endif; ?>

@@ -3,20 +3,24 @@
 ----------------------------------------------------------------------------*/
 
 // Colors
-$primary: #B0C4DE;
-$secondary: #7B899B;
-$tertiary: #F2F7FE;
-$accent: #E4F0FE;
-$dark: #56606C;
+$primary: #eef0ef;
+$secondary: #e8d6cb;
+$tertiary: #e7e2dd;
+$accent: #414b33;
+$dark: #4c4d50;
 $white: #fff;
 $black: #000;
 
 // Font Families
 $mont: 'Montserrat', sans-serif;
-$lora: 'Lora', serif;
-$noelan: 'Noelan', serif;
+$spec: 'Spectral SC', serif;
+$val: 'Valledofas', serif;
 
 // Font Weights
+$thin: 100;
+$thinI: 100i;
+$extraLight: 200;
+$extraLightI: 200i;
 $light: 300;
 $regular: 400;
 $semibold: 600;
