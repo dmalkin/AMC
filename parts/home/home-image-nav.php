@@ -18,14 +18,17 @@
         // Variables
         $image = get_sub_field('image');
         $title = get_sub_field('title');
+        $link = get_sub_field('link');
 
       ?>
         <div class="col">
-          <div class="text-center image-nav__block" style="background: url(<?php echo esc_attr($image['sizes']['image-nav']); ?>) center center/cover no-repeat;">
-            <h3 class="image-nav__title">
-              <?php echo $title; ?>
-            </h3>
-          </div>
+          <a href="<?php echo $link['url']; ?>">
+            <div class="text-center image-nav__block" style="background: url(<?php echo esc_attr($image['sizes']['image-nav']); ?>) center center/cover no-repeat;">
+              <h3 class="image-nav__title">
+                <?php echo $link['title']; ?>
+              </h3>
+            </div>
+          </a>
         </div>
       <?php endwhile;?>
     </div>
