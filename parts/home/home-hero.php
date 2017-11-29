@@ -22,7 +22,6 @@
   <section class="container home-hero">
     <div class="row row--full-width">
       <div class="col-12 col-no-pad text-center">
-        <h2 class="hero-logo">Allie Malkin Creative</h2>
         <div class="home-slider">
           <?php while( $query->have_posts() ): $query->the_post(); ?>
             <div class="home-slider__slide global-padding--bottom--small" style="background: url(<?php featuredURL(); ?>) center center/cover no-repeat">

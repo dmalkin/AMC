@@ -20,8 +20,23 @@
 
       a {
         margin: auto;
-        color: $white;
+        font-size: rem(14);
+        text-transform: uppercase;
+        color: $dark;
+
+        &:hover {
+          color: $secondary;
+        }
       }
+    }
+  }
+
+  #menu-primary-left {
+    justify-content: flex-end;
+
+    li {
+      padding-left: rem(40);
+      padding-right: 0;
     }
   }
 }

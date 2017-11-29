@@ -128,21 +128,5 @@
   }
   add_filter("mce_buttons_3", "enable_more_buttons");
 
-  // Hide editor on Home Page
-  function hide_editor() {
-     // Hide the editor on the page titled 'Home'
-     $homepgname = get_the_title($post_id);
-     if($homepgname == 'Home'){
-       remove_post_type_support('page', 'editor');
-     }
-     // Hide the editor on a page with a specific page template
-     // Get the name of the Page Template file.
-      $template_file = substr( get_page_template(), strrpos( get_page_template(), '/' ) + 1 );
-      if($template_file == 'contact.php' || 'archive.php'){ // the filename of the page template
-        remove_post_type_support('page', 'editor');
-      }
-   }
-   add_action( 'admin_head', 'hide_editor' );
-
-   // Remove Contact Form editor
-   add_filter( 'wpcf7_validate_configuration', '__return_false' );
+  // Remove Contact Form editor
+  add_filter( 'wpcf7_validate_configuration', '__return_false' );

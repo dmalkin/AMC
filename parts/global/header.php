@@ -13,13 +13,20 @@
 <header class="container header">
   <div class="row row--align-items-center">
 
-      <div class="col-9 sm-hide">
-        <?php // Primary Menu
-        wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') ); ?>
+      <div class="col-4 sm-hide">
+        <?php // Primary Menu (Left)
+          wp_nav_menu( array('theme_location' => 'primary-left', 'container' => 'nav', 'container_class' => 'primary-nav') );
+        ?>
       </div>
-      <div class="col-3 sm-hide">
-        <?php // Search ?>
-
+      <div class="col-4">
+        <a href="<?php echo home_url(); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="Allie Malkin Creative" />
+        </a>
+      </div>
+      <div class="col-4 sm-hide">
+        <?php // Primary Menu (Right)
+          wp_nav_menu( array('theme_location' => 'primary-right', 'container' => 'nav', 'container_class' => 'primary-nav') );
+        ?>
       </div>
 
       <div class="menu-icon sm-only">
