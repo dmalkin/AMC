@@ -17,7 +17,7 @@
     border: 1px solid $white;
     &:hover {
       background-color: $white;
-      color: $accent;
+      color: $dark;
       cursor: pointer;
       text-decoration: none;
     }
@@ -37,8 +37,8 @@
     background-color: $dark;
     border: 1px solid $dark;
     &:hover {
-      background-color: $secondary;
-      color: $white;
+      color: $secondary;
+      cursor: pointer;
     }
   }
 

@@ -8,5 +8,27 @@
     width: 100%;
     display: inline-flex;
     justify-content: space-around;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: rem(200);
+  }
+
+  input[type='email'] {
+    width: 100%;
+    padding: rem(1) rem(10);
+    line-height: rem(52);
+  }
+
+  input[type='submit'] {
+    border-radius: 0;
+  }
+
+  .your-email {
+    width: 50%;
   }
 }

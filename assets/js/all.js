@@ -3779,4 +3779,7 @@ jQuery( document ).ready(function( $ ) {
     });
   }
 
+  // Form Buttons
+  $('input[type=submit]').addClass('button button--dark');
+
 });
