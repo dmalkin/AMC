@@ -1,0 +1,17 @@
+/*----------------------------------------------------------------------------
+  Sidebar
+----------------------------------------------------------------------------*/
+.widget_categories {
+  background-color: $primary;
+
+  h2 {
+    position: relative;
+    width: 80%;
+    padding: rem(5) rem(10);
+    left: 5%;
+    top: rem(-15);
+    text-align: center;
+    font: 300 rem(25)/rem(30) $mont;
+    background-color: $secondary;
+  }
+}
