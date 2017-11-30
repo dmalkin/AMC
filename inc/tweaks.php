@@ -57,12 +57,6 @@
   }
   add_filter( 'excerpt_more', 'prelude_auto_excerpt_more' );
 
-  /* Change Excerpt length */
-  function custom_excerpt_length( $length ) {
-    return 30;
-  }
-  add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
   // Remove the default gallery styling
   function prelude_remove_gallery_css( $css ) {
     return preg_replace( "#<style type='text/css'>(.*?)</style>#s", '', $css );

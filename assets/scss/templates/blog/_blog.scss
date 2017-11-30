@@ -36,6 +36,16 @@
 
   p {
     font-size: rem(14);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: rem(25);
+    max-height: rem(100);
+
+    @media (-webkit-min-device-pixel-ratio: 0) {
+      display: -webkit-box;
+      -webkit-line-clamp: 4; /* number of lines to show */
+      -webkit-box-orient: vertical;
+    }
   }
 
   hr {
