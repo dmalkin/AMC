@@ -1,6 +1,13 @@
 /*----------------------------------------------------------------------------
   Blog
 ----------------------------------------------------------------------------*/
+.blog {
+  h1 {
+    margin-bottom: 0;
+    margin-right: rem(50);
+  }
+}
+
 .blog-archive {
   padding: rem(50);
 
@@ -17,7 +24,7 @@
     width: 80%;
     margin: auto;
     line-height: rem(50);
-    background-color: $dark;
+    background-color: $primary;
 
     .post-categories {
       list-style: none;
@@ -26,6 +33,10 @@
 
       li {
         margin-bottom: 0;
+
+        a {
+          color: $dark;
+        }
       }
     }
   }
@@ -36,15 +47,18 @@
 
   p {
     font-size: rem(14);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: rem(25);
-    max-height: rem(100);
 
-    @media (-webkit-min-device-pixel-ratio: 0) {
-      display: -webkit-box;
-      -webkit-line-clamp: 4; /* number of lines to show */
-      -webkit-box-orient: vertical;
+    a {
+      display: flex;
+      justify-content: center;
+      padding: rem(15) 0;
+      font-size: rem(18);
+      text-transform: uppercase;
+      color: $dark;
+
+      .meta-nav {
+        padding-left: rem(5);
+      }
     }
   }
 

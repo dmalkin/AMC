@@ -20,12 +20,22 @@
 
   $img = wp_get_attachment_image_src($img_field, 'global_hero');
 
+  if( is_home() ) {
+    $title = 'Blog';
+  } else {
+    $title = get_title();
+  }
+
 ?>
 
  <section class="container global-hero">
   <div class="row row--full-width global-hero__img" style="background:url(<?php echo $img[0]; ?>) center center/cover no-repeat;">
-    <div class="col-12 col-no-pad text-center">
-
+    <div class="col-12 col-no-pad">
+      <div class="row row--justify-content-end">
+        <h1 class="script">
+          <?php echo $title; ?>
+        </h1>
+      </div>
     </div>
   </div>
 </section>

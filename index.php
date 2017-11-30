@@ -10,24 +10,33 @@
 
     <section class="container blog-archive">
       <div class="row">
-        <div class="sm-block-grid-1 block-grid-2">
-          <?php while ( have_posts() ) : the_post(); ?>
-            <div class="col">
-              <div class="blog-archive__single-img" style="background:url(<?php featuredURL(); ?>) center center/cover;"></div>
-              <h5 class="blog-archive__category text-center">
-                <?php the_category(); ?>
-              </h5>
-              <h2 class="blog-archive__title text-center">
-                <?php the_title(); ?>
-              </h2>
-              <div class="row">
-                <div class="col-2 col-centered">
-                  <hr>
+        <div class="col-2">
+
+        </div>
+        <div class="col-10">
+          <div class="sm-block-grid-1 block-grid-2">
+            <?php while ( have_posts() ) : the_post(); ?>
+              <div class="col">
+                <a href="<?php echo get_permalink(); ?>">
+                  <div class="blog-archive__single-img" style="background:url(<?php featuredURL(); ?>) center center/cover;"></div>
+                </a>
+                <h5 class="blog-archive__category text-center">
+                  <?php the_category(); ?>
+                </h5>
+                <a href="<?php echo get_permalink(); ?>">
+                  <h2 class="blog-archive__title text-center">
+                    <?php the_title(); ?>
+                  </h2>
+                </a>
+                <div class="row">
+                  <div class="col-2 col-centered">
+                    <hr>
+                  </div>
                 </div>
+                <?php the_excerpt(); ?>
               </div>
-              <?php the_excerpt(); ?>
-            </div>
-          <?php endwhile; ?>
+            <?php endwhile; ?>
+          </div>
         </div>
       </div>
     </section>

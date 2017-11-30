@@ -43,6 +43,10 @@ h6 {
   color: $black;
 }
 
+.script {
+  font: $regular rem(125)/rem(125) $val;
+}
+
 // Body Copy
 p, ul, ol, li {
   margin: 0 0 rem(15);
