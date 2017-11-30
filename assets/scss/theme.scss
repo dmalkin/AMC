@@ -31,6 +31,7 @@
 
 // Global Styles
 @import 'globals/global';
+@import 'globals/hero';
 @import 'globals/wordpress';
 @import 'globals/typography';
 @import 'globals/fonts';
@@ -51,6 +52,7 @@
 @import 'templates/home/home-hero';
 @import 'templates/home/home-store';
 @import 'templates/home/home-resources';
+@import 'templates/blog/blog';
 
 // Plugin Overrides
 @import 'plugins/overrides';

@@ -11,7 +11,7 @@
 
  // WP_Query arguments
  $args = array(
-   'category_name' => 'Featured',
+   'tag' => 'Featured',
  );
 
  // The Query

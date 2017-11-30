@@ -43,8 +43,5 @@
         <?php endforeach;?>
       </div>
     </div>
-    <div class="row row--justify-content-center">
-      <div class="square"></div>
-    </div>
   </section>
 <?php endif; wp_reset_postdata(); ?>

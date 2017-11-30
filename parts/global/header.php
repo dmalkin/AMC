@@ -20,7 +20,8 @@
       </div>
       <div class="col-4">
         <a href="<?php echo home_url(); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="Allie Malkin Creative" />
+          <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="Allie Malkin Creative" /> -->
+          <h1 class="small-logo text-center">Am</h1>
         </a>
       </div>
       <div class="col-4 sm-hide">

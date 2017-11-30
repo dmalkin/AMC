@@ -1,0 +1,44 @@
+/*----------------------------------------------------------------------------
+  Blog
+----------------------------------------------------------------------------*/
+.blog-archive {
+  padding: rem(50);
+
+  &__single-img {
+    min-height: rem(300);
+  }
+
+  &__category {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: rem(-30);
+    height: rem(50);
+    width: 80%;
+    margin: auto;
+    line-height: rem(50);
+    background-color: $dark;
+
+    .post-categories {
+      list-style: none;
+      padding: 0;
+      margin: auto;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: rem(14);
+  }
+
+  hr {
+    border: 1px solid $dark;
+  }
+}
