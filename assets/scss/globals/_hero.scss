@@ -4,6 +4,7 @@
 .global-hero {
 
   &__img {
-    min-height: rem(350);
+    @include aspect-ratio(5,2);
+    // min-height: rem(350);
   }
 }
