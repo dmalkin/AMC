@@ -10,10 +10,10 @@
 
     <section class="container blog-archive">
       <div class="row">
-        <div class="col-2">
-
+        <div class="col-3">
+          <?php get_sidebar(); ?>
         </div>
-        <div class="col-10">
+        <div class="col-9">
           <div class="sm-block-grid-1 block-grid-2">
             <?php while ( have_posts() ) : the_post(); ?>
               <div class="col">
