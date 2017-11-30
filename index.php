@@ -13,7 +13,7 @@
         <div class="col-3">
           <?php get_sidebar(); ?>
         </div>
-        <div class="col-9">
+        <div class="col-8 offset-1">
           <div class="sm-block-grid-1 block-grid-2">
             <?php while ( have_posts() ) : the_post(); ?>
               <div class="col">

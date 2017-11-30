@@ -14,4 +14,25 @@
     font: 300 rem(25)/rem(30) $mont;
     background-color: $secondary;
   }
+
+  ul {
+    position: relative;
+    top: rem(-10);
+    list-style: none;
+
+    li {
+      a {
+        color: $dark;
+      }
+    }
+  }
+}
+
+.site-owner {
+  margin-bottom: rem(50);
+  padding: rem(20) rem(10) 0 rem(10);
+
+  a {
+    color: $dark
+  }
 }
