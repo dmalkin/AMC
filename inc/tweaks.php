@@ -47,15 +47,21 @@
   // Customize the default read more link
   function prelude_continue_reading_link() {
     return ' <a href="' . get_permalink() . '">' .
-     __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'theme-slug' ) .
+     __( 'Read This Post <span class="meta-nav">&rarr;</span>', 'theme-slug' ) .
      '</a>';
   }
 
   // Customize the default ellipsis (...)
   function prelude_auto_excerpt_more( $more ) {
-    return '&hellip;' . prelude_continue_reading_link();
+    return prelude_continue_reading_link();
   }
   add_filter( 'excerpt_more', 'prelude_auto_excerpt_more' );
+
+  /* Change Excerpt length */
+  function custom_excerpt_length( $length ) {
+    return 30;
+  }
+  add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
   // Remove the default gallery styling
   function prelude_remove_gallery_css( $css ) {
