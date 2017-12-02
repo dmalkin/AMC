@@ -43,6 +43,7 @@
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/sidebar';
+@import 'components/pagination';
 
 // Packages
 @import 'scss/font-awesome';
@@ -54,6 +55,7 @@
 @import 'templates/home/home-store';
 @import 'templates/home/home-resources';
 @import 'templates/blog/blog';
+@import 'templates/about/about';
 
 // Plugin Overrides
 @import 'plugins/overrides';

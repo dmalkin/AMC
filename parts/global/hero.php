@@ -11,21 +11,17 @@
 
   // Global Hero Custom Fields
   // Assigns variables based on whether page is blog page
-
-  $img_field = get_post_thumbnail_id( get_option('page_for_posts', true) );
-  $blog_title = get_the_title( get_option('page_for_posts', true) );
-
-  $img = wp_get_attachment_image_src($img_field, 'global_hero');
-
-  if( is_archive() ) {
-    $img = wp_get_attachment_image_src(116, 'global_hero');
-  }
-
+  
   if( is_home() || is_archive() || is_single() ) {
+    $img_field = get_post_thumbnail_id( get_option('page_for_posts', true) );
+    $blog_title = get_the_title( get_option('page_for_posts', true) );
     $title = 'Blog';
   } else {
-    $title = get_title();
+    $img_field = get_post_thumbnail_id();
+    $title = get_the_title();
   }
+
+  $img = wp_get_attachment_image_src($img_field, 'global_hero');
 
 ?>
 

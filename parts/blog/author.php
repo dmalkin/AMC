@@ -33,9 +33,7 @@ while ( have_posts() ) : the_post();
        <h3>
         <?php echo $name; ?>
        </h3>
-       <p>
-         <?php echo $excerpt; ?>
-       </p>
+       <?php echo $excerpt; ?>
        <br>
      </div>
    </div>
