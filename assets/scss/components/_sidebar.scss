@@ -29,10 +29,18 @@
 }
 
 .site-owner {
-  margin-bottom: rem(50);
-  padding: rem(20) rem(10) 0 rem(10);
+  margin-top: rem(40);
 
-  a {
-    color: $dark
+  &__welcome {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    padding: rem(10) 0 rem(5);
+    top: rem(-30);
+    font-size: rem(60);
+    text-align: center;
+    line-height: rem(60);
+    background: $dark;
+    color: white;
   }
 }

@@ -5,36 +5,37 @@
 // Headers
 h1 {
   margin: 0 0 rem(30);
-  font: $thin rem(55)/rem(60) $mont;
-  letter-spacing: rem(5);
+  font: $extraLight rem(35)/rem(40) $spec;
+  font-style: italic;
   color: $dark;
 }
 
 h2 {
   margin: 0 0 rem(20);
-  font: $extraLight rem(45)/rem(56) $spec;
+  font: $thin rem(30)/rem(35) $mont;
+  letter-spacing: rem(5);
   color: $dark;
 }
 
 h3 {
   margin: 0 0 rem(15);
   text-transform: uppercase;
-  font: $extraLight rem(30)/rem(35) $spec;
+  font: $extraLight rem(20)/rem(25) $spec;
   font-style: italic;
   color: $dark;
 }
 
 h4 {
   margin: 0 0 rem(15);
-  font: $regular rem(25)/rem(30) $val;
-  color: $accent;
+  font: $thin rem(16)/rem(25) $mont;
+  color: $dark;
 }
 
 h5 {
   margin: 0 0 rem(15);
   font: $regular rem(20)/rem(25) $mont;
   text-transform: uppercase;
-  color: $tertiary;
+  color: $dark;
 }
 
 h6 {
@@ -45,19 +46,24 @@ h6 {
 
 .script {
   font: $regular rem(125)/rem(125) $val;
+
+  &--small {
+    font-size: rem(80);
+    line-height: rem(80);
+  }
 }
 
 // Body Copy
 p, ul, ol, li {
   margin: 0 0 rem(15);
-  font: $light rem(18)/rem(25) $mont;
+  font: $light rem(16)/rem(25) $mont;
   color: $dark;
 }
 
 // Links
 a {
   font-family: $mont;
-  color: $primary;
+  color: $dark;
   text-decoration: none;
   transition: all .25s ease;
 

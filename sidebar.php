@@ -24,13 +24,13 @@
 
   <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
     <aside class="sidebar">
+      <?php dynamic_sidebar( 'sidebar-1' ); ?>
       <div class="site-owner">
         <img src="<?php featuredURL('full'); ?>">
-        <h6 class="script">Hello There!</h6>
+        <h6 class="site-owner__welcome script">Hello</h6>
         <?php echo $excerpt; ?>
         <a href="">More About Me &rarr;</a>
       </div>
-      <?php dynamic_sidebar( 'sidebar-1' ); ?>
     </aside>
   <?php endif; ?>
 

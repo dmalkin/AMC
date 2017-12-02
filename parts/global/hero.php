@@ -32,7 +32,7 @@
   <div class="row row--full-width global-hero__img" style="background:url(<?php echo $img[0]; ?>) center center/cover no-repeat;">
     <div class="col-12 col-no-pad">
       <div class="row row--justify-content-end page-title">
-        <h1 class="script">
+        <h1 class=" global-title script">
           <?php echo $title; ?>
         </h1>
       </div>

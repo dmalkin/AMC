@@ -26,7 +26,7 @@
  // Variables
  $title = get_field( 'title' );
  $excerpt = get_the_excerpt();
- $link = ;
+ 
 
 ?>
 

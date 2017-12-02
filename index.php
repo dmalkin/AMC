@@ -24,9 +24,9 @@
                   <?php the_category(); ?>
                 </h5>
                 <a href="<?php echo get_permalink(); ?>">
-                  <h2 class="blog-archive__title text-center">
+                  <h1 class="blog-archive__title text-center">
                     <?php the_title(); ?>
-                  </h2>
+                  </h1>
                 </a>
                 <div class="row">
                   <div class="col-2 col-centered">
