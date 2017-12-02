@@ -1,0 +1,38 @@
+/*------------------------------------------------------------------------------
+  Pagination
+------------------------------------------------------------------------------*/
+.nav-links {
+  display: flex;
+  justify-content: center;
+
+  .page-numbers {
+    margin: 0 rem(5);
+    padding: rem(5) rem(12);
+    border-radius: 50%;
+    background-color: rgba(76,77,80,0.3);
+    color: $white;
+
+    &:hover {
+      color: $secondary;
+      background-color: rgba(76,77,80,0.5);
+    }
+  }
+
+  .current {
+    color: $white;
+    background-color: rgba(76,77,80,0.5);
+  }
+
+  .prev, .next {
+    border: none;
+    border-radius: unset;
+    background-color: unset;
+    color: rgba(76,77,80,0.5);
+
+    &:hover {
+      border-radius: unset;
+      background-color: unset;
+      color: rgba(76,77,80,0.8);
+    }
+  }
+}
