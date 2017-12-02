@@ -20,7 +20,11 @@
 
   $img = wp_get_attachment_image_src($img_field, 'global_hero');
 
-  if( is_home() ) {
+  if( is_archive() ) {
+    $img = wp_get_attachment_image_src(116, 'global_hero');
+  }
+
+  if( is_home() || is_archive()) {
     $title = 'Blog';
   } else {
     $title = get_title();

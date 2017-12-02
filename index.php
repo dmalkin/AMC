@@ -47,4 +47,6 @@
     echo '<h2>Sorry, no posts have been found</h2>';
   endif;
 
+  wp_reset_postdata();
+
   get_footer();
