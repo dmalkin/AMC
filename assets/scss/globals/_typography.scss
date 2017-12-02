@@ -5,8 +5,7 @@
 // Headers
 h1 {
   margin: 0 0 rem(30);
-  font: $extraLight rem(35)/rem(40) $spec;
-  font-style: italic;
+  font: $extraLight rem(45)/rem(40) $spec;
   color: $dark;
 }
 
@@ -19,9 +18,8 @@ h2 {
 
 h3 {
   margin: 0 0 rem(15);
+  font: $regular rem(22)/rem(30) $mont;
   text-transform: uppercase;
-  font: $extraLight rem(20)/rem(25) $spec;
-  font-style: italic;
   color: $dark;
 }
 
@@ -33,7 +31,7 @@ h4 {
 
 h5 {
   margin: 0 0 rem(15);
-  font: $regular rem(20)/rem(25) $mont;
+  font: $regular rem(12)/rem(18) $mont;
   text-transform: uppercase;
   color: $dark;
 }
@@ -57,6 +55,7 @@ h6 {
 p, ul, ol, li {
   margin: 0 0 rem(15);
   font: $light rem(16)/rem(25) $mont;
+  letter-spacing: rem(0.5);
   color: $dark;
 }
 

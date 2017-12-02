@@ -6,12 +6,18 @@
    */
   get_header();
 
-  if( have_posts() ):
+  get_template_part('parts/global/hero');
 
-    while( have_posts() ): the_post();
+  if ( have_posts() ) :
 
-    endwhile;
-    
+    get_template_part('parts/blog/content');
+
+    get_template_part('parts/single/post-nav');
+
+    get_template_part('parts/blog/author');
+
   endif;
+
+  wp_reset_postdata();
 
   get_footer();

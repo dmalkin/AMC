@@ -9,14 +9,18 @@
  * @since 0.0.1
  */
 
+while ( have_posts() ) : the_post();
+
   // WP_Query arguments
-  // if ( is_home() ) :
+  if ( is_front_page() ) {
+    $tax = 'Site Owner';
+  }
+
     $args = array(
      'post_type'        => 'f1_staffgrid_cpt',
-     'f1_staffgrid_tax' => 'Site Owner',
+     'f1_staffgrid_tax' => $tax,
      'meta_key'         => 'last_name',
     );
-  // endif;
 
    // The Query
    $staff = new WP_Query( $args );
@@ -26,7 +30,6 @@
  // Variables
  $title = get_field( 'title' );
  $excerpt = get_the_excerpt();
- 
 
 ?>
 
@@ -34,7 +37,7 @@
    <div class="row row--full-width">
      <div class="col-5 col-no-pad">
        <img src="<?php featuredURL('full'); ?>">
-       <a href="<?php echo $link; ?>" class="button button--dark" >Oh, you want more?</a>
+       <a href="<?php echo $link; ?>" class="button button--dark" >More About Me &rarr;</a>
      </div>
      <div class="col-6 offset-1">
        <h2>
@@ -48,4 +51,4 @@
    </div>
  </section>
 
-<?php endwhile; endif; wp_reset_postdata(); ?>
+<?php endwhile; endif; wp_reset_postdata(); endwhile;?>
