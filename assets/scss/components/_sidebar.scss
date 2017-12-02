@@ -45,3 +45,43 @@
     color: white;
   }
 }
+
+.social-menu ul {
+  display: flex;
+  justify-content: center;
+  padding: rem(10);
+
+  .menu-item {
+    display: inline-block;
+    margin: rem(10);
+
+    a {
+      font-size: 0;
+      text-decoration: none;
+
+      &:before {
+        font-family: 'FontAwesome';
+        font-size: 30px;
+        color: $dark;
+        transition: 0.3s all ease;
+      }
+
+      &:hover:before {
+        color: $secondary;
+      }
+
+      &[href*="facebook.com"]::before {
+        content: '\f09a';
+      }
+      &[href*="twitter.com"]::before {
+        content: '\f099';
+      }
+      &[href*="instagram.com"]::before {
+        content: '\f16d';
+      }
+      &[href*="linkedin.com"]::before {
+        content: '\f0e1';
+      }
+    }
+  }
+}

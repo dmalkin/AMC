@@ -2,36 +2,63 @@
   /**
    * The template for the sidebar containing the main widget area
    */
+   // Variables
 
-   // WP_Query arguments
-   $args = array(
-    'post_type'        => 'f1_staffgrid_cpt',
-    'f1_staffgrid_tax' => 'Site Owner',
-    'meta_key'         => 'last_name',
-   );
+   $author = get_field('author');
+   $id = $author->ID;
+   $name = $author->post_title;
+   $excerpt = $author->post_excerpt;
+   $image = get_the_post_thumbnail_url($id, 'full');
+   $link = get_permalink();
 
-    // The Query
-    $staff = new WP_Query( $args );
- ?>
-
- <?php if ($staff->have_posts()) : while ($staff->have_posts()) : $staff->the_post();
-  // Variables
-  $title = get_field( 'title' );
-  $excerpt = get_the_excerpt();
+   // Social Media
+   $facebook = get_field('facebook_url', $id);
+   $twitter = get_field('twitter_url', $id);
+   $linkedin = get_field('linkedin_url', $id);
+   $insta = get_field('instagram_url', $id);
 
  ?>
 
 
   <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
     <aside class="sidebar">
-      <?php dynamic_sidebar( 'sidebar-1' ); ?>
+      <h3 class="text-center">About the Author</h3>
+      <div class="row">
+        <div class="col-2 col-centered">
+          <hr>
+        </div>
+      </div>
       <div class="site-owner">
-        <img src="<?php featuredURL('full'); ?>">
-        <h6 class="site-owner__welcome script">Hello</h6>
-        <?php echo $excerpt; ?>
-        <a href="">More About Me &rarr;</a>
+        <img src="<?php echo $image; ?>">
+
+        <!-- Social Media -->
+           <?php if ($twitter || $facebook || $linkedin || $insta ) : ?>
+             <div class="social-menu">
+               <ul>
+                 <?php if ($twitter) : ?>
+                   <li class="menu-item">
+                     <a href="http://<?php echo $twitter; ?>"></a>
+                   </li>
+                 <?php endif; if($facebook) : ?>
+                   <li class="menu-item">
+                     <a href="http://<?php echo $facebook; ?>"></a>
+                   </li>
+                 <?php endif; if($insta) : ?>
+                   <li class="menu-item">
+                     <a href="http://<?php echo $insta; ?>"></a>
+                   </li>
+                 <?php endif; if($linkedin) : ?>
+                   <li class="menu-item">
+                     <a href="http://<?php echo $linkedin; ?>"></a>
+                   </li>
+                 <?php endif; ?>
+               </ul>
+             </div>
+           <?php endif; ?>
+        <p>
+          <?php echo $excerpt; ?>
+        </p>
+        <a href="<?php echo $link; ?>">More About Me &rarr;</a>
       </div>
     </aside>
   <?php endif; ?>
-
-<?php endwhile; endif; wp_reset_postdata(); ?>

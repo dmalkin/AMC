@@ -36,3 +36,17 @@
     }
   }
 }
+
+// Instagram Feed
+#sbi_images {
+  height: rem(250);
+  overflow: hidden;
+
+  .sbi_item {
+    width: 20% !important;
+  }
+}
+
+#sbi_load {
+  display: none;
+}

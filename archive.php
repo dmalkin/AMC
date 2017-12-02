@@ -13,7 +13,7 @@
     <section class="container blog-archive">
       <div class="row">
         <div class="col-3">
-          <?php get_sidebar(); ?>
+          <?php get_template_part('sidebar-blog'); ?>
         </div>
         <div class="col-8 offset-1">
           <div class="sm-block-grid-1 block-grid-2">

@@ -1,3 +1,4 @@
+<?php echo do_shortcode('[instagram-feed]'); ?>
 <?php // Close main ?>
 </main>
 

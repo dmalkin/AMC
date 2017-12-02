@@ -72,11 +72,14 @@
   padding: rem(50);
 
   &__img {
-    margin-bottom: rem(30); 
+    margin-bottom: rem(30);
   }
 }
 
 .blog-more {
+  padding: rem(30) 0;
+  background-color: $tertiary;
+
   p {
     font-size: rem(14);
 

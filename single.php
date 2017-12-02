@@ -14,8 +14,6 @@
 
     get_template_part('parts/single/post-nav');
 
-    get_template_part('parts/blog/author');
-
   endif;
 
   wp_reset_postdata();
