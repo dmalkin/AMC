@@ -38,6 +38,12 @@
 }
 
 // Instagram Feed
+#sb_instagram {
+  padding-top: rem(30);
+  padding-bottom: rem(40) !important;
+  background-color: $tertiary;
+}
+
 #sbi_images {
   height: rem(250);
   overflow: hidden;
