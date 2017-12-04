@@ -29,6 +29,7 @@
           $thumbnail_id = get_woocommerce_term_meta( $term->term_id, 'thumbnail_id', true );
           $image = wp_get_attachment_url( $thumbnail_id );
           $term_link = get_term_link($term);
+          $description = $term->description;
 
         ?>
 
@@ -50,4 +51,4 @@
       </div>
     </div>
   </section>
-<?php endif; wp_reset_postdata(); ?>
+<?php endif; ?>

@@ -9,37 +9,43 @@
  * @since 0.0.1
  */
 
- // WP_Query arguments
- $args = array(
-   'tag' => 'Featured',
- );
+ // Variables
 
- // The Query
- $query = new WP_Query( $args );
- if( $query->have_posts() ):
 
 ?>
+
+<?php if( have_rows('home_slide') ) : ?>
   <section class="container home-hero">
     <div class="row row--full-width">
       <div class="col-12 col-no-pad text-center">
         <div class="home-slider">
-          <?php while( $query->have_posts() ): $query->the_post(); ?>
-            <div class="home-slider__slide global-padding--bottom--small" style="background: url(<?php featuredURL(); ?>) center center/cover no-repeat">
+          <?php while( have_rows('home_slide') ) : the_row();
+            // Variables
+            $page = get_sub_field('home_slide');
+            $title = $page->post_title;
+            $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($page->ID), $size );
+            $url = $thumb['0'];
+            $link = get_post_permalink($page->ID);
+
+          ?>
+            <div class="home-slider__slide global-padding--bottom--small" style="background: url(<?php echo $url; ?>) center center/cover no-repeat">
               <div class="row">
                 <div class="col-12 text-center">
-                  <h2>Blog</h2>
+                  <h2>
+                    <?php echo $title; ?>
+                  </h2>
                   <div class="row">
                     <div class="col-4 col-centered">
                       <hr />
                     </div>
                   </div>
-                  <a class="button button--primary" href="<?php echo get_permalink(); ?>" >Read More</a>
+                  <a class="button button--primary" href="<?php echo $link; ?>">Read More</a>
                 </div>
               </div>
             </div>
-          <?php endwhile; ?>
+          <?php endwhile;?>
         </div>
       </div>
     </div>
   </section>
-<?php endif; wp_reset_postdata(); ?>
+<?php endif;?>
