@@ -33,13 +33,12 @@ while ( have_posts() ) : the_post();
 
 ?>
 
- <section class="container about">
+ <section class="container about-global">
    <div class="row row--full-width">
-     <div class="col-5 col-no-pad">
-       <img src="<?php featuredURL('full'); ?>">
+     <div class="col-5 stretch col-no-pad about-global__img" style="background:url(<?php featuredURL('full'); ?>) center center/cover no-repeat;">
        <a href="<?php echo $link; ?>" class="button button--dark" >More About Me &rarr;</a>
      </div>
-     <div class="col-6 offset-1">
+     <div class="col-6 stretch offset-1 about-global__text">
        <h2>
          Hello
        </h2>

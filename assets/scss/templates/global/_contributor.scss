@@ -1,8 +1,17 @@
 /*------------------------------------------------------------------------------
   Typography
 ------------------------------------------------------------------------------*/
-.about {
-  padding: rem(50) 0;
+.about-global {
+
+  &__img {
+    min-height: rem(400);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .button {
     position: absolute;

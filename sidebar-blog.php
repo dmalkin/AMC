@@ -18,6 +18,9 @@
   // Variables
   $title = get_field( 'title' );
   $excerpt = get_the_excerpt();
+  $tags = get_tags(array(
+    'hide_empty' => false
+  ));
 
  ?>
 

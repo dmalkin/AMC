@@ -2,7 +2,7 @@
   About
 ------------------------------------------------------------------------------*/
 .about-content {
-  padding: rem(50) 0;
+  padding-top: rem(50);
   background-color: $tertiary;
 }
 
@@ -16,5 +16,10 @@
   &__img {
     height: rem(200);
     border-radius: 50%;
+  }
+
+  &__wrap {
+    margin-top: rem(30);
+    margin-bottom: rem(30);
   }
 }

@@ -1,6 +1,6 @@
 <?php
   /**
-   *
+   * About Page
    */
 
   get_header();

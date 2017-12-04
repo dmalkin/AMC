@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------------------
+  Gallery
+------------------------------------------------------------------------------*/
+.gallery {
+
+  h1 {
+    margin-top: rem(30);
+  }
+}
+.gallery-img {
+  padding: rem(5);
+}
+
+.gallery-nav {
+  background-color: $tertiary;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 80%;
+    list-style: none;
+
+    li {
+      margin-bottom: 0;
+      padding: rem(10) 0;
+
+      a {
+        padding: rem(15) 0;
+        font-size: rem(12);
+        text-transform: uppercase;
+      }
+    }
+  }
+}

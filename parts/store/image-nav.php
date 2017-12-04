@@ -1,8 +1,8 @@
 <?php
 /**
- * Home Store template part
+ * Store image nav template part
  *
- * Template part used on the home page
+ * Template part used on the store page
  *
  * @package Allie Malkin Creative
  * @author Factor1 Studios <factor1studios.com>
@@ -10,19 +10,20 @@
  */
 
  // Variables
- $headline = get_field('store_headline');
- $terms = get_field('featured_categories'); 
+ $args = array(
+     'orderby'    => 'name',
+     'order'      => 'asc',
+     'hide_empty' => false,
+ );
+ $terms = get_terms( 'product_cat', $args );
 
 ?>
 
 <?php if( $terms ) : ?>
   <section class="container home-store">
     <div class="row row--justify-content-center">
-      <div class="text-center">
-        <?php echo $headline; ?>
-      </div>
       <div class="sm-block-grid-1 block-grid-3">
-        <?php foreach( $terms as $term ) :
+        <?php foreach( $terms as $key => $term ) :
 
           // Variables
           $thumbnail_id = get_woocommerce_term_meta( $term->term_id, 'thumbnail_id', true );
@@ -41,6 +42,11 @@
             </a>
           </div>
         <?php endforeach;?>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10 col-centered">
+        <hr>
       </div>
     </div>
   </section>

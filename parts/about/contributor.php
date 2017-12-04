@@ -32,7 +32,7 @@
         $image = get_the_post_thumbnail_url($author->ID, 'full');
 
        ?>
-         <div class="col-9 col-centered">
+         <div class="col-9 col-centered about-contributors__wrap">
            <div class="row">
              <div class="col-3 stretch about-contributors__img" style="background:url(<?php echo $image; ?>) center center/cover no-repeat"></div>
              <div class="col-8 stretch offset-1">
@@ -40,6 +40,7 @@
                  <?php echo $name; ?>
                </h2>
                <?php echo $excerpt; ?>
+               <a href="<?php echo $link; ?>">More About Me &rarr;</a>
              </div>
            </div>
          </div>
