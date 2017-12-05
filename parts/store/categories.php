@@ -13,64 +13,94 @@
 
 ?>
 
-<section class="container categories-content">
-
-  <!-- Calligraphy -->
+<!-- Calligraphy -->
+<section class="container calligraphy description">
 
   <?php // Variables
         $calligraphy_description = get_field('calligraphy_description', 11);
   ?>
 
-    <div class="row">
+    <div class="row row--full-width description">
       <div class="col-10 col-centered">
         <?php echo $calligraphy_description; ?>
       </div>
     </div>
-    <div class="row row--justify-content-center">
+    <div class="row row--justify-content-center description">
       <div class="square"></div>
     </div>
+</section>
 
-    <?php if(have_rows('calligraphy_products', 11)) : ?>
-      <div class="row">
+<?php if(have_rows('calligraphy_products', 11)) : ?>
+  <section class="container calligraphy-products">
+    <div class="row">
+      <div class="col-10 col-centered">
         <div class="sm-block-grid-1 block-grid-2">
           <?php while(have_rows('calligraphy_products', 11)) : the_row();
             // Variables
             $calligraphy_image = get_sub_field('calligraphy_image', 11);
             $calligraphy_title = get_sub_field('calligraphy_title', 11);
           ?>
-            <div class="col" style="background:url(<?php echo $calligraphy_image['url']; ?>) center center/cover no-repeat">
-              <h3>
+            <div class="col calligraphy-product" style="background:url() center center/cover no-repeat">
+              <img src="<?php echo $calligraphy_image['url']; ?>" title="<?php echo $calligraphy_image['title']; ?>">
+              <h3 class="text-center blog-archive__category">
                 <?php echo $calligraphy_title; ?>
               </h3>
             </div>
           <?php endwhile; ?>
         </div>
       </div>
-    <?php endif; ?>
+    </div>
+  </section>
+<?php endif; ?>
 
-  <!-- End Calligraphy -->
+<!-- End Calligraphy -->
 
-  <!-- Signs -->
+<!-- Signs -->
+<section class="container sing description">
   <?php // Variables
         $sign_description = get_field('sign_description', 11);
   ?>
 
-    <div class="row">
+    <div class="row row--full-width description">
       <div class="col-10 col-centered">
         <?php echo $sign_description; ?>
       </div>
     </div>
-    <div class="row row--justify-content-center">
+    <div class="row row--justify-content-center description">
       <div class="square"></div>
     </div>
-  <!-- End Signs -->
+</section>
 
-  <!-- Photography -->
+<?php if(have_rows('calligraphy_products', 11)) : ?>
+  <section class="container sign-products">
+    <div class="row">
+      <div class="col-10 col-centered">
+        <div class="sm-block-grid-1 block-grid-2">
+          <?php while(have_rows('calligraphy_products', 11)) : the_row();
+            // Variables
+            $calligraphy_image = get_sub_field('calligraphy_image', 11);
+            $calligraphy_title = get_sub_field('calligraphy_title', 11);
+          ?>
+            <div class="col calligraphy-product" style="background:url() center center/cover no-repeat">
+              <img src="<?php echo $calligraphy_image['url']; ?>" title="<?php echo $calligraphy_image['title']; ?>">
+              <h3 class="text-center blog-archive__category">
+                <?php echo $calligraphy_title; ?>
+              </h3>
+            </div>
+          <?php endwhile; ?>
+        </div>
+      </div>
+    </div>
+  </section>
+<?php endif; ?>
+<!-- End Signs -->
+
+<!-- Photography -->
   <?php // Variables
         $photography_description = get_field('photography_description', 11);
   ?>
 
-    <div class="row">
+    <div class="row row--full-width description">
       <div class="col-10 col-centered">
         <?php echo $photography_description; ?>
       </div>
