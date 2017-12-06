@@ -21,6 +21,8 @@ function prelude_theme_scripts() {
   // CSS
   wp_enqueue_style('prelude-css', get_template_directory_uri() . '/assets/css/theme.min.css', array(), THEME_VERSION );
   wp_enqueue_style('salvattore-css', get_template_directory_uri() . '/assets/css/salvattore.css', array(), THEME_VERSION );
+  wp_enqueue_style('remodal-css', get_template_directory_uri() . '/assets/css/remodal.css', array(), THEME_VERSION );
+  wp_enqueue_style('remodal-default-css', get_template_directory_uri() . '/assets/css/remodal-default-theme.css', array(), THEME_VERSION );
   wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Montserrat:100,100i,300,400|Spectral+SC:200,200i,400,400i', array(), THEME_VERSION );
 
   // JS

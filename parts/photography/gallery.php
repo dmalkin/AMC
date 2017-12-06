@@ -24,7 +24,7 @@
       <?php if( $images ): ?>
         <?php foreach( $images as $image ): ?>
           <div class="gallery-img">
-            <img src="<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+            <img src="<?php echo $image['sizes']['large'];; ?>">
           </div>
         <?php endforeach; ?>
       <?php endif; ?>
