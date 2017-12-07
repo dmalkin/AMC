@@ -5172,4 +5172,26 @@ jQuery( document ).ready(function( $ ) {
   // Form Buttons
   $('input[type=submit]').addClass('button button--dark');
 
+  // Shop page
+  $('#sign').hide();
+  $('#photography').hide();
+
+  $('#Calligraphy').click(function(){
+    $('#sign').hide();
+    $('#photography').hide();
+    $('#calligraphy').show();
+  })
+
+  $('#Signs').click(function(){
+    $('#sign').show();
+    $('#photography').hide();
+    $('#calligraphy').hide();
+  })
+
+  $('#Photography').click(function(){
+    $('#sign').hide();
+    $('#photography').show();
+    $('#calligraphy').hide();
+  })
+
 });

@@ -27,9 +27,9 @@
         ?>
 
           <div class="col">
-            <a href="<?php echo $link; ?>">
+            <a id="<?php echo $title; ?>">
               <div class="text-center image-nav__block" style="background: url(<?php echo $image['url']; ?>) center center/cover no-repeat;">
-                <h2 href="<?php echo $link; ?>" class="image-nav__title button">
+                <h2 class="image-nav__title button">
                   <?php echo $title; ?>
                 </h2>
               </div>

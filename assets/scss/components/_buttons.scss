@@ -23,12 +23,11 @@
     }
   }
   &--secondary {
-    background-color: $primary;
-    border: 1px solid $primary;
+    background-color: $dark;
     &:hover {
       cursor: pointer;
-      background-color: $white;
-      color: $primary;
+      background-color: $dark;
+      color: $secondary;
       text-decoration: none;
     }
   }
