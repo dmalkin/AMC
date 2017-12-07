@@ -20,12 +20,12 @@ This theme is created with [prelude-wp](https://github.com/prelude-wp).
 "ginger-grid": "^2.1.1",
 "nifty-nav": "^3.0.0",
 "prelude-wp": "^3.5.1",
-"sugar": "more-sugar#^1.0.5"
+"sugar": "more-sugar#^1.0.5",
+"slick-carousel": "^1.7.1",
+"remodal": "^1.1.1",
 ```
 
 ## Remote Repos
-Production environment can be updated by using git. This hooks
-directly into the `/themes/` folder.
 
 #### Production Repo
 ```sh
