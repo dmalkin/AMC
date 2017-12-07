@@ -35,17 +35,19 @@ while ( have_posts() ) : the_post();
 
  <section class="container about-global">
    <div class="row row--full-width">
-     <div class="col-5 stretch col-no-pad about-global__img" style="background:url(<?php featuredURL('full'); ?>) center center/cover no-repeat;">
-       <a href="<?php echo $link; ?>" class="button button--dark" >More About Me &rarr;</a>
-     </div>
+     <div class="col-5 stretch col-no-pad about-global__img" style="background:url(<?php featuredURL('full'); ?>) center center/cover no-repeat;"></div>
      <div class="col-6 stretch offset-1 about-global__text">
-       <h2>
-         Hello
-       </h2>
-       <p>
-         <?php echo $excerpt; ?>
-       </p>
-       <br>
+       <div class="row">
+         <div class="col-10">
+           <h2>
+             Hello
+           </h2>
+           <p>
+             <?php echo $excerpt; ?>
+           </p>
+           <a href="<?php echo $link; ?>">More About Me &rarr;</a>
+         </div>
+       </div>
      </div>
    </div>
  </section>
