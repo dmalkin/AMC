@@ -27,9 +27,11 @@
        <?php while(have_rows('contributors')) : the_row();
         // Variables
         $author = get_sub_field('contributor');
+        $id = $author->ID;
         $name = $author->post_title;
         $excerpt = $author->post_excerpt;
-        $image = get_the_post_thumbnail_url($author->ID, 'full');
+        $image = get_the_post_thumbnail_url($id, 'full');
+        $link = get_permalink($id);
 
        ?>
          <div class="col-9 col-centered about-contributors__wrap">

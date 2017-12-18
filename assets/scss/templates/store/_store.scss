@@ -1,13 +1,30 @@
 /*------------------------------------------------------------------------------
   Store
 ------------------------------------------------------------------------------*/
-
+.home-store {
+  .store-col {
+    &:after {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      bottom: rem(-26);
+      font-family: FontAwesome;
+      content: "\f0d8";
+      font-size: rem(40);
+      color: $dark;
+    }
+  }
+}
 .description {
   background-color: $tertiary;
 }
 
 .products {
-  padding: rem(50) 0;
+  padding: rem(75) 0;
+
+  .row:first-of-type {
+    padding: rem(25) 0;
+  }
 }
 
 .calligraphy-product {

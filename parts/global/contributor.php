@@ -45,7 +45,6 @@ while ( have_posts() ) : the_post();
            <p>
              <?php echo $excerpt; ?>
            </p>
-           <a href="<?php echo $link; ?>">More About Me &rarr;</a>
          </div>
        </div>
      </div>

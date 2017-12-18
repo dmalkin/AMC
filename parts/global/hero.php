@@ -12,10 +12,13 @@
   // Global Hero Custom Fields
   // Assigns variables based on whether page is blog page
 
-  if ( is_home() || is_archive() || is_single() ) {
+  if ( is_home() || is_archive() || is_single()) {
     $img_field = get_post_thumbnail_id( get_option('page_for_posts', true) );
     $blog_title = get_the_title( get_option('page_for_posts', true) );
     $title = 'blog';
+  } elseif (is_page('about')) {
+    $img_field = get_post_thumbnail_id();
+    $title = '';
   } else {
     $img_field = get_post_thumbnail_id();
     $title = get_the_title();

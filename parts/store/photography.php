@@ -20,7 +20,7 @@
       <?php echo $photography_description; ?>
     </div>
   </div>
-  <div class="row row--full-width row--justify-content-center description">
+  <div class="row row--full-width row--justify-content-center square-container">
     <div class="square"></div>
   </div>
 
@@ -35,7 +35,7 @@
         <div class="row">
           <div class="col-10 col-centered">
             <div class="row">
-              <div class="col-4 stretch sign-product" style="background: url(<?php echo $product_image['url']; ?>) center center/cover no-repeat"></div>
+              <div class="col-4 stretch" style="background: url(<?php echo $product_image['url']; ?>) center center/cover no-repeat"></div>
               <div class="col-7 offset-1 stretch">
                 <?php echo $product_description; ?>
                 <a href="" class="button button--secondary">

@@ -5,7 +5,6 @@
 
   &__img {
     @include aspect-ratio(4,1);
-    // min-height: rem(350);
   }
 
   .page-title {

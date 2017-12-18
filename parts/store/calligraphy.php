@@ -21,7 +21,7 @@
       <?php echo $calligraphy_description; ?>
     </div>
   </div>
-  <div class="row row--full-width row--justify-content-center description">
+  <div class="row row--full-width row--justify-content-center square-container">
     <div class="square"></div>
   </div>
 

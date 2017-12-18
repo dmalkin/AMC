@@ -6,8 +6,6 @@
    */
   get_header();
 
-  get_template_part('parts/global/hero');
-
   if ( have_posts() ) :
 
     get_template_part('parts/blog/content');
