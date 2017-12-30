@@ -32,3 +32,25 @@
     width: 50%;
   }
 }
+
+.footer-contact  {
+  .wpcf7 form {
+    flex-direction: column;
+    height: auto !important;
+
+    input[type=email], input[type=text] {
+      width: 100%;
+      padding: rem(1) rem(10);
+      line-height: rem(52);
+    }
+
+    span {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+      padding: rem(10);
+    }
+  }
+}

@@ -31,7 +31,6 @@
         $name = $author->post_title;
         $excerpt = $author->post_excerpt;
         $image = get_the_post_thumbnail_url($id, 'full');
-        $link = get_permalink($id);
 
        ?>
          <div class="col-9 col-centered about-contributors__wrap">
@@ -42,7 +41,6 @@
                  <?php echo $name; ?>
                </h2>
                <?php echo $excerpt; ?>
-               <a href="<?php echo $link; ?>">More About Me &rarr;</a>
              </div>
            </div>
          </div>

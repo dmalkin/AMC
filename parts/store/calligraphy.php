@@ -11,7 +11,7 @@
 
  // Variables
  $calligraphy_description = get_field('calligraphy_description');
- $calligraphy_form = get_field('calligraphy_form');
+ // $calligraphy_form = get_field('calligraphy_form');
 
 ?>
 

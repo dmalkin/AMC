@@ -14,7 +14,7 @@
 ?>
 
 <?php if( have_rows('featured_categories', 5) ) : ?>
-  <section class="container home-store">
+  <section class="container store-page">
     <div class="row row--justify-content-center">
       <div class="sm-block-grid-1 block-grid-3">
         <?php while( have_rows('featured_categories', 5) ) : the_row();

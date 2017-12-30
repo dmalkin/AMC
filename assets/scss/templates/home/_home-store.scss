@@ -4,6 +4,10 @@
 .home-store {
   background-color: $tertiary;
   padding: rem(50) 0;
+
+  > .row {
+    min-height: 400px;
+  }
 }
 
 .image-nav {

@@ -26,17 +26,26 @@
       align-content: center;
       height: rem(50);
       margin: 0;
+      border-bottom: 1px solid transparent;
 
       a {
         margin: auto;
         font-size: rem(14);
         text-transform: uppercase;
         color: $dark;
+      }
 
-        &:hover {
+      &:hover {
+        border-bottom: 1px solid $secondary;
+
+        a {
           color: $secondary;
         }
       }
     }
   }
+}
+
+.current-menu-item {
+  border-bottom: 1px solid $secondary !important;
 }

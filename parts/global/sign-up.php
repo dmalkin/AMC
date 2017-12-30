@@ -14,8 +14,10 @@
 
 ?>
 
-<section class="container mailing">
-  <div class="row">
-    <?php echo $form; ?>
-  </div>
-</section>
+<?php if($form) : ?>
+  <section class="container mailing">
+    <div class="row">
+      <?php echo $form; ?>
+    </div>
+  </section>
+<?php endif; ?>

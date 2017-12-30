@@ -32,7 +32,7 @@
         <img src="<?php featuredURL('full'); ?>">
         <h6 class="site-owner__welcome script">Hello</h6>
         <?php echo $excerpt; ?>
-        <a href="">More About Me &rarr;</a>
+        <a href="<?php home_url(); ?>/about">More About Me &rarr;</a>
       </div>
     </aside>
   <?php endif; ?>

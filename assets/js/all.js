@@ -5173,37 +5173,37 @@ jQuery( document ).ready(function( $ ) {
   $('input[type=submit]').addClass('button button--dark');
 
   // Shop page
-  $('.home-store .col').first().addClass('store-col');
+  $('.store-page .col').first().addClass('store-col');
 
   $('#sign').hide();
   $('#photography').hide();
 
   $('#Calligraphy').click(function(){
     $('#sign').hide();
-    $('.home-store .col:nth-child(2)').removeClass('store-col');
+    $('.store-page .col:nth-child(2)').removeClass('store-col');
     $('#photography').hide();
-    $('.home-store .col:nth-child(3)').removeClass('store-col');
+    $('.store-page .col:nth-child(3)').removeClass('store-col');
     $('#calligraphy').show();
-    $('.home-store .col').first().addClass('store-col');
+    $('.store-page .col').first().addClass('store-col');
   })
 
   $('#Signs').click(function(){
     $('#sign').show();
-    $('.home-store .col:nth-child(2)').addClass('store-col');
+    $('.store-page .col:nth-child(2)').addClass('store-col');
     $('#photography').hide();
-    $('.home-store .col:nth-child(3)').removeClass('store-col');
+    $('.store-page .col:nth-child(3)').removeClass('store-col');
     $('#calligraphy').hide();
-    $('.home-store .col').first().removeClass('store-col');
+    $('.store-page .col').first().removeClass('store-col');
 
   })
 
   $('#Photography').click(function(){
     $('#sign').hide();
-    $('.home-store .col:nth-child(2)').removeClass('store-col');
+    $('.store-page .col:nth-child(2)').removeClass('store-col');
     $('#photography').show();
-    $('.home-store .col:nth-child(3)').addClass('store-col');
+    $('.store-page .col:nth-child(3)').addClass('store-col');
     $('#calligraphy').hide();
-    $('.home-store .col').first().removeClass('store-col');
+    $('.store-page .col').first().removeClass('store-col');
   })
 
 });

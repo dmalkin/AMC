@@ -16,7 +16,7 @@
 
 <?php if( have_rows('featured_categories') ) : ?>
   <section class="container home-store">
-    <div class="row row--justify-content-center">
+    <div class="row row--justify-content-center row--align-content-center">
       <div class="text-center">
         <?php echo $headline; ?>
       </div>
