@@ -16,7 +16,7 @@
 
   <section class="container blog-single">
     <div class="row">
-      <?php if( $author == 'false' ) :
+      <?php if( $author ) :
         // Variables
         $author_col = 'col-8 offset-1';
         ?>
