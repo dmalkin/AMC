@@ -31,7 +31,7 @@
  <section class="container global-hero">
   <div class="row row--full-width global-hero__img" style="background:url(<?php echo $img[0]; ?>) center center/cover no-repeat;">
     <div class="col-12">
-      <div class="row row--justify-content-end page-title">
+      <div class="row page-title">
         <h1 class=" global-title script">
           <?php echo $title; ?>
         </h1>
