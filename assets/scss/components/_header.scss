@@ -49,3 +49,46 @@
 .current-menu-item {
   border-bottom: 1px solid $secondary !important;
 }
+
+.mobile-logo {
+  max-height: rem(75);
+
+  img {
+    width: 100%;
+    max-height: rem(75);
+  }
+}
+
+.nifty-panel {
+  ul {
+    list-style: none;
+    padding-left: rem(20);
+    margin-top: rem(15);
+
+    li {
+      padding: rem(10);
+      border-bottom: none !important;
+
+      a {
+        font-size: rem(35);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .current-menu-item {
+    a {
+
+      &:before {
+        position: relative;
+        padding-right: rem(10);
+        top: rem(-3);
+        left: 0;
+        content: "\f105";
+        font-family: FontAwesome;
+        font-size: rem(30);
+        font-weight: 300;
+      }
+    }
+  }
+}
