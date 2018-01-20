@@ -36,7 +36,7 @@ while ( have_posts() ) : the_post();
  <section class="container about-global">
    <div class="row row--full-width">
      <div class="col-5 stretch col-no-pad about-global__img" style="background:url(<?php featuredURL('full'); ?>) center center/cover no-repeat;"></div>
-     <div class="col-6 stretch offset-1 about-global__text">
+     <div class="col-6 sm-col-11 col-centered sm-text-center stretch offset-1 about-global__text">
        <div class="row">
          <div class="col-10">
            <h2>
