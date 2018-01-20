@@ -16,7 +16,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <section class="container about-content">
    <div class="row">
-     <div class="col-10 col-centered">
+     <div class="col-10 sm-col-11 col-centered">
        <?php the_content(); ?>
      </div>
    </div>

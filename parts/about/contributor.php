@@ -36,7 +36,7 @@
          <div class="col-9 col-centered about-contributors__wrap">
            <div class="row">
              <div class="col-3 stretch about-contributors__img" style="background:url(<?php echo $image; ?>) center center/cover no-repeat"></div>
-             <div class="col-8 stretch offset-1">
+             <div class="col-8 sm-col-10 col-centered stretch offset-1 sm-text-center">
                <h2>
                  <?php echo $name; ?>
                </h2>

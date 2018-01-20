@@ -20,6 +20,8 @@
   }
 
   &__img {
+    margin: auto;
+    max-width: rem(200);
     height: rem(200);
     border-radius: 50%;
   }
@@ -27,5 +29,20 @@
   &__wrap {
     margin-top: rem(30);
     margin-bottom: rem(30);
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  .about-contributors {
+
+    &__headline {
+      margin-bottom: 0;
+      font-size: rem(26);
+    }
+
+    &__img {
+      margin-bottom: rem(20);
+    }
   }
 }
