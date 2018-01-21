@@ -5156,7 +5156,7 @@ jQuery( document ).ready(function( $ ) {
       autoplay: true,
       autoplaySpeed: 6000,
       slidesToShow: 1,
-      adaptiveHeight: false,
+      adaptiveHeight: true,
       dots: false,
       responsive: [
         {

@@ -23,23 +23,26 @@
             // Variables
             $page = get_sub_field('home_slide');
             $title = $page->post_title;
+            $size = 'resources';
             $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($page->ID), $size );
             $url = $thumb['0'];
             $link = get_post_permalink($page->ID);
 
           ?>
-            <div class="home-slider__slide global-padding--bottom--small" style="background: url(<?php echo $url; ?>) center center/cover no-repeat">
-              <div class="row">
-                <div class="col-12 text-center">
-                  <h2>
-                    <?php echo $title; ?>
-                  </h2>
-                  <div class="row">
-                    <div class="col-4 col-centered">
-                      <hr />
+            <div>
+              <div class="home-slider__slide global-padding--bottom--small" style="background: url(<?php echo $url; ?>) center center/cover no-repeat">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <h2>
+                      <?php echo $title; ?>
+                    </h2>
+                    <div class="row">
+                      <div class="col-4 col-centered">
+                        <hr />
+                      </div>
                     </div>
+                    <a class="button button--primary" href="<?php echo $link; ?>">Read More</a>
                   </div>
-                  <a class="button button--primary" href="<?php echo $link; ?>">Read More</a>
                 </div>
               </div>
             </div>
