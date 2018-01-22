@@ -1,5 +1,5 @@
 # Allie Malkin Creative
-A custom WordPress theme designed and developed by Factor1.
+A custom WordPress theme designed and developed by Dana Malkin.
 
 ### Credits
 > Designer & Developer
