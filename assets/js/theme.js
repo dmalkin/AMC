@@ -42,38 +42,65 @@ jQuery( document ).ready(function( $ ) {
   // Form Buttons
   $('input[type=submit]').addClass('button button--dark');
 
+
   // Shop page
   $('.store-page .col').first().addClass('store-col');
 
-  $('#sign').hide();
+  $('#signs').hide();
   $('#photography').hide();
 
   $('#Calligraphy').click(function(){
-    $('#sign').hide();
+    $('#signs').hide();
     $('.store-page .col:nth-child(2)').removeClass('store-col');
     $('#photography').hide();
     $('.store-page .col:nth-child(3)').removeClass('store-col');
     $('#calligraphy').show();
     $('.store-page .col').first().addClass('store-col');
+
+		// Anchor scrolling
+		var t= $(this.hash);
+    var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
+    if(t.length){
+        var tOffset=t.offset().top;
+        $('html,body').animate({scrollTop:tOffset-20},'slow');
+        e.preventDefault();
+    }
   })
 
   $('#Signs').click(function(){
-    $('#sign').show();
+    $('#signs').show();
     $('.store-page .col:nth-child(2)').addClass('store-col');
     $('#photography').hide();
     $('.store-page .col:nth-child(3)').removeClass('store-col');
     $('#calligraphy').hide();
     $('.store-page .col').first().removeClass('store-col');
 
+		// Anchor scrolling
+		var t= $(this.hash);
+    var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
+    if(t.length){
+        var tOffset=t.offset().top;
+        $('html,body').animate({scrollTop:tOffset-20},'slow');
+        e.preventDefault();
+    }
   })
 
   $('#Photography').click(function(){
-    $('#sign').hide();
+    $('#signs').hide();
     $('.store-page .col:nth-child(2)').removeClass('store-col');
     $('#photography').show();
     $('.store-page .col:nth-child(3)').addClass('store-col');
     $('#calligraphy').hide();
     $('.store-page .col').first().removeClass('store-col');
+
+		// Anchor scrolling
+		var t= $(this.hash);
+    var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
+    if(t.length){
+        var tOffset=t.offset().top;
+        $('html,body').animate({scrollTop:tOffset-20},'slow');
+        e.preventDefault();
+    }
   })
 
 });

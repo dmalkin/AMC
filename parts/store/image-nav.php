@@ -23,11 +23,12 @@
           $title = get_sub_field('title');
           $image = get_sub_field('image');
           $link = get_sub_field('category_link');
+          $anchor = strtolower($title);
 
         ?>
 
           <div class="col">
-            <a id="<?php echo $title; ?>">
+            <a href="#<?php echo $anchor; ?>" id="<?php echo $title; ?>">
               <div class="text-center image-nav__block" style="background: url(<?php echo $image['url']; ?>) center center/cover no-repeat;">
                 <h2 class="image-nav__title button">
                   <?php echo $title; ?>
@@ -38,7 +39,7 @@
         <?php endwhile; ?>
       </div>
     </div>
-    <div class="row">
+    <div class="row sm-hide">
       <div class="col-10 col-centered">
         <hr>
       </div>

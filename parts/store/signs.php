@@ -18,7 +18,7 @@
 
 ?>
 
-<section class="container" id="sign">
+<section class="container" id="signs">
   <div class="row row--full-width description">
     <div class="col-10 col-centered">
       <?php echo $sign_description; ?>
