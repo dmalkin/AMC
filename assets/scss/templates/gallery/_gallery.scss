@@ -35,3 +35,10 @@
     }
   }
 }
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint){
+	#grid[data-columns]::before {
+		content: '1 .column.size-1of1' !important;
+	}
+}

@@ -17,7 +17,7 @@
 
 <section class="container gallery">
   <div class="row row--justify-content-center">
-    <h1>
+    <h1 class="text-center">
       <?php echo $title; ?>
     </h1>
     <div id="grid" data-columns>
