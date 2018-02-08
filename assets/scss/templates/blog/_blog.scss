@@ -16,7 +16,28 @@
   padding: rem(50);
 
   &__single-img {
+    position: relative;
     min-height: rem(300);
+    transition: all 0.3s ease;
+
+    &:before {
+      content: '';
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+      background-color: rgba(0,0,0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      &:before {
+        display: none;
+      }
+
+      transform: scale(1.1);
+    }
   }
 
   &__category {
@@ -101,4 +122,8 @@
 
     }
   }
+}
+
+.sidebar {
+  margin-bottom: rem(30);
 }
