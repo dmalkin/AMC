@@ -20,7 +20,7 @@
       </div>
       <div class="col-4 text-center sm-hide">
         <a href="<?php echo home_url(); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="Allie Malkin Creative" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Allie Malkin Creative" />
         </a>
       </div>
       <div class="col-4 sm-hide">
@@ -31,7 +31,7 @@
 
       <div class="mobile-logo sm-only">
         <a href="<?php echo home_url(); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-sm.svg" alt="Allie Malkin Creative" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-sm.png" alt="Allie Malkin Creative" />
         </a>
       </div>
       <div class="menu-icon sm-only">
